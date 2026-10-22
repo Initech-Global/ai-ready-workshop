@@ -1,0 +1,172 @@
+[
+  {
+    "id": "e001",
+    "employee": "Asha Rao",
+    "date": "2026-10-19",
+    "project": "Atlas Portal",
+    "billable": true,
+    "minutes": 410,
+    "status": "submitted",
+    "note": "Login page"
+  },
+  {
+    "id": "e002",
+    "employee": "Asha Rao",
+    "date": "2026-10-19",
+    "project": "Internal Training",
+    "billable": false,
+    "minutes": 50,
+    "status": "submitted",
+    "note": "AI Champions"
+  },
+  {
+    "id": "e003",
+    "employee": "Ben Ortiz",
+    "date": "2026-10-19",
+    "project": "Support Rota",
+    "billable": true,
+    "minutes": 515,
+    "status": "submitted",
+    "note": "Incident 2211"
+  },
+  {
+    "id": "e004",
+    "employee": "Chen Li",
+    "date": "2026-10-19",
+    "project": "Atlas Portal",
+    "billable": true,
+    "minutes": 400,
+    "status": "submitted",
+    "note": "Export design"
+  },
+  {
+    "id": "e005",
+    "employee": "Asha Rao",
+    "date": "2026-10-20",
+    "project": "Atlas Portal",
+    "billable": true,
+    "minutes": 455,
+    "status": "submitted",
+    "note": "Search API"
+  },
+  {
+    "id": "e006",
+    "employee": "Ben Ortiz",
+    "date": "2026-10-20",
+    "project": "Support Rota",
+    "billable": true,
+    "minutes": 530,
+    "status": "submitted",
+    "note": "Patching"
+  },
+  {
+    "id": "e007",
+    "employee": "Chen Li",
+    "date": "2026-10-20",
+    "project": "Atlas Portal",
+    "billable": true,
+    "minutes": 410,
+    "status": "submitted",
+    "note": "Export design"
+  },
+  {
+    "id": "e008",
+    "employee": "Asha Rao",
+    "date": "2026-10-21",
+    "project": "Atlas Portal",
+    "billable": true,
+    "minutes": 380,
+    "status": "submitted",
+    "note": "Code review"
+  },
+  {
+    "id": "e009",
+    "employee": "Asha Rao",
+    "date": "2026-10-21",
+    "project": "Internal Training",
+    "billable": false,
+    "minutes": 95,
+    "status": "submitted",
+    "note": "AI Champions"
+  },
+  {
+    "id": "e010",
+    "employee": "Ben Ortiz",
+    "date": "2026-10-21",
+    "project": "Support Rota",
+    "billable": true,
+    "minutes": 505,
+    "status": "submitted",
+    "note": "Incident 2219"
+  },
+  {
+    "id": "e011",
+    "employee": "Chen Li",
+    "date": "2026-10-21",
+    "project": "Atlas Portal",
+    "billable": true,
+    "minutes": 395,
+    "status": "draft",
+    "note": "Unit tests"
+  },
+  {
+    "id": "e012",
+    "employee": "Asha Rao",
+    "date": "2026-10-22",
+    "project": "Atlas Portal",
+    "billable": true,
+    "minutes": 425,
+    "status": "submitted",
+    "note": "Search API"
+  },
+  {
+    "id": "e013",
+    "employee": "Ben Ortiz",
+    "date": "2026-10-22",
+    "project": "Support Rota",
+    "billable": true,
+    "minutes": 520,
+    "status": "submitted",
+    "note": "On-call"
+  },
+  {
+    "id": "e014",
+    "employee": "Asha Rao",
+    "date": "2026-10-23",
+    "project": "Atlas Portal",
+    "billable": true,
+    "minutes": 350,
+    "status": "submitted",
+    "note": "Release prep"
+  },
+  {
+    "id": "e015",
+    "employee": "Asha Rao",
+    "date": "2026-10-23",
+    "project": "Internal Training",
+    "billable": false,
+    "minutes": 40,
+    "status": "submitted",
+    "note": "AI Champions"
+  },
+  {
+    "id": "e016",
+    "employee": "Ben Ortiz",
+    "date": "2026-10-23",
+    "project": "Support Rota",
+    "billable": true,
+    "minutes": 480,
+    "status": "submitted",
+    "note": "Handover"
+  },
+  {
+    "id": "e017",
+    "employee": "Chen Li",
+    "date": "2026-10-22",
+    "project": "Internal Training",
+    "billable": false,
+    "minutes": 480,
+    "status": "draft",
+    "note": "Leave cover"
+  }
+]
