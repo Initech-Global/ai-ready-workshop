@@ -16,6 +16,11 @@ They work on any repo: practise on this one, then run them on your own.
       npm install
       claude
 
+- **Already cloned it?** Run just these two lines inside your `ai-ready-workshop` folder:
+
+      git switch -c workshop/your-name
+      git remote set-url --push origin no-push
+
 - Everything you do stays on your machine. Commit to your own branch as often as you like;
   nothing goes back to GitHub. (`git push` will fail on purpose.)
 
