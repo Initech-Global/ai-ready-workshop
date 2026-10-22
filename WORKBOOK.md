@@ -8,7 +8,7 @@ They work on any repo: practise on this one, then run them on your own.
 - Node 20 or later, git, and Claude Code installed and logged in
 - Clone the practice repo on the `start` branch:
 
-      git clone -b start <repo-url> ai-ready-workshop
+      git clone -b start https://github.com/Initech-Global/ai-ready-workshop.git
       cd ai-ready-workshop
       npm install
       claude
