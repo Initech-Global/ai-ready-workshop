@@ -6,12 +6,18 @@ They work on any repo: practise on this one, then run them on your own.
 ## Before you start
 
 - Node 20 or later, git, and Claude Code installed and logged in
-- Clone the practice repo on the `start` branch:
+- Clone the practice repo on the `start` branch, make your own branch, and switch off pushing
+  from your copy (replace `your-name`):
 
       git clone -b start https://github.com/Initech-Global/ai-ready-workshop.git
       cd ai-ready-workshop
+      git switch -c workshop/your-name
+      git remote set-url --push origin no-push
       npm install
       claude
+
+- Everything you do stays on your machine. Commit to your own branch as often as you like;
+  nothing goes back to GitHub. (`git push` will fail on purpose.)
 
 - Run each prompt in a fresh session, or type `/clear` between steps.
 - Read what Claude changed before you move on. You are the reviewer.
@@ -42,10 +48,11 @@ Make a throwaway branch and ask for a real feature, before changing anything.
 Add a CSV export of this week's timesheet that we can send to the client.
 ```
 
-Note what it did. Then throw it away:
+Note what it did. Keep it for comparison, then go back to your branch:
 
-    git switch start
-    git branch -D before-test
+    git add -A
+    git commit -m "before test"
+    git switch workshop/your-name
 
 **Look for:** did it ask any questions? Did it reuse `src/lib/apiClient.ts` or copy the fetch code again?
 Did it export draft or non-billable time? How did it round hours? Did it run the tests?
@@ -232,8 +239,10 @@ Keep the skill under 40 lines. Use the skill format with name and description in
 
 ## Step 8: The "after" test (5 min)
 
-Same prompt as Step 0, on a new branch:
+Commit your setup on your branch, then run the same prompt as Step 0 on a new branch:
 
+    git add -A
+    git commit -m "ai-ready setup"
     git switch -c after-test
 
 ```
@@ -241,7 +250,8 @@ Add a CSV export of this week's timesheet that we can send to the client.
 ```
 
 **Compare with Step 0:** questions asked, `apiClient` reused, only billable and submitted entries,
-rounding to 15 minutes, verify run at the end. Then run the Step 1 audit again and compare scores.
+rounding to 15 minutes, verify run at the end. To see the "before" code again: `git show before-test --stat`.
+Then run the Step 1 audit again and compare scores.
 
 ---
 
