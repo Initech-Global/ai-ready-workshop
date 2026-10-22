@@ -1,3 +1,10 @@
 node_modules
 dist
 .DS_Store
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+CLAUDE.local.md
+.claude/settings.local.json
