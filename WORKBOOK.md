@@ -128,7 +128,12 @@ Make this repo safe for an AI agent to work in.
    (git rm --cached) and which secrets to rotate.
 ```
 
-**Check:** run `git rm --cached .env` yourself, then ask Claude to read `.env`. It should be refused.
+**Then:** run `git rm --cached .env` yourself. Claude won't delete files, so this is your job. It stops git
+tracking `.env` but keeps it on disk, so the app still runs.
+
+**Check:** ask Claude to read `.env`. It should be refused.
+
+On a real repo, a secret that was ever committed is still in the git history: rotate it.
 
 > A rule in a prompt is a request. A deny rule in settings is enforced.
 
