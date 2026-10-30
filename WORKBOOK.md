@@ -141,6 +141,11 @@ On a real repo, a secret that was ever committed is still in the git history: ro
 
 ## Step 4: Business rules, asked not assumed (10 min)
 
+**About the practice app:** an internal timesheet tool. Consultants log time per entry
+(minutes, project, billable or not), save it as a draft, then submit it. Each week the
+submitted, billable time is exported as a CSV and sent to the client for billing.
+For this step you play its product owner, using the answer card below.
+
 **Prompt**
 
 ```
@@ -149,22 +154,31 @@ rounding and date logic.
 
 Write docs/business-rules.md with one numbered rule per line and where it lives in the code.
 
-Then list what you could not find or had to guess, as questions for me.
-Do not invent rules. Ask me the questions one at a time and write my answers into the file.
+Then list what you could not find or had to guess, as questions for me: at most 8,
+most important first, all in one list. Do not invent rules.
+I will answer what I can. Write my answers into the file as rules, and put anything
+I don't answer under "Open questions".
 ```
 
-**For the workshop:** answer as the product owner, using this card.
+**For the workshop:** answer as the product owner, using this card. Claude may word its
+questions differently; match them to the closest row. You can answer several at once.
 
-| Question | Product owner's answer |
+| If Claude asks about | Product owner's answer |
 |---|---|
-| Rounding | Each entry is rounded **up** to the next 15 minutes for billing and export |
+| Rounding | Each entry is rounded **up** to the next 15 minutes for billing, export and overtime. Screens show the real time |
 | What goes to the client | Only **billable** entries |
 | Drafts | Only **submitted** entries are exported; drafts never are |
-| Overtime | More than 40 rounded hours per employee in a week (Monday to Sunday). Shown in reports, not billed differently |
-| Export format | CSV, one row per entry: date (YYYY-MM-DD), employee, project, hours (2 decimals), note. File name `timesheet-<week start>.csv` |
+| What "this week" means | Monday to Sunday |
+| Export format | CSV with a header row, one row per entry: date (YYYY-MM-DD), employee, project, hours (2 decimals), note |
+| File name | `timesheet-<week start>.csv`, where week start is the Monday, e.g. `timesheet-2026-10-19.csv` |
+| Overtime | More than 40 rounded hours of submitted time per employee in a week. Shown in reports, not billed differently |
+| **Anything not on this card** | "Not decided yet. Add it to Open questions." |
 
-On your own repo, the product owner or lead answers these. Anything nobody can answer is a
-finding in itself.
+The last row matters. Timezones, limits per day and employee ids are deliberately not decided,
+so they should end up as open questions, not invented rules.
+
+On your own repo, the product owner or lead answers these, not the AI and not a guess.
+A question nobody can answer is a finding in itself: take it to the product owner.
 
 ---
 
