@@ -6,24 +6,21 @@ They work on any repo: practise on this one, then run them on your own.
 ## Before you start
 
 - Node 20 or later, git, and Claude Code installed and logged in
-- Clone the practice repo on the `start` branch, make your own branch, and switch off pushing
-  from your copy (replace `your-name`):
+- Clone the practice repo on the `start` branch and make your own branch (replace `your-name`):
 
       git clone -b start https://github.com/Initech-Global/ai-ready-workshop.git
       cd ai-ready-workshop
       git switch -c workshop/your-name origin/start
-      git remote set-url --push origin no-push
       npm install
       claude
 
-- **Already cloned it?** Run just these two lines inside your `ai-ready-workshop` folder, whichever
+- **Already cloned it?** Run just this line inside your `ai-ready-workshop` folder, whichever
   branch you are on. Your branch starts from `start` (`finished` is the answer key, so don't work on it):
 
       git switch -c workshop/your-name origin/start
-      git remote set-url --push origin no-push
 
 - Everything you do stays on your machine. Commit to your own branch as often as you like;
-  nothing goes back to GitHub. (`git push` will fail on purpose.)
+  nothing goes back to GitHub. (Pushes to GitHub are blocked.)
 
 - Run each prompt in a fresh session, or type `/clear` between steps.
 - Read what Claude changed before you move on. You are the reviewer.
