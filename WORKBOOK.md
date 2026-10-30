@@ -168,6 +168,7 @@ questions differently; match them to the closest row. You can answer several at 
 | Rounding | Each entry is rounded **up** to the next 15 minutes for billing, export and overtime. Screens show the real time |
 | What goes to the client | Only **billable** entries |
 | Drafts | Only **submitted** entries are exported; drafts never are |
+| Approval, or an "approved" status | There is no approval step. **Submitted** is final: a submitted entry is ready to bill |
 | What "this week" means | Monday to Sunday |
 | Export format | CSV with a header row, one row per entry: date (YYYY-MM-DD), employee, project, hours (2 decimals), note |
 | File name | `timesheet-<week start>.csv`, where week start is the Monday, e.g. `timesheet-2026-10-19.csv` |
